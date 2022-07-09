@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Map Picker";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container" id="mapPicker" style="display:none">
+    <img src="~/maps/bind.webp" alt="rotating image" width="400" height="300" id="rotator">
+</div>
+
+@* Shows the mapPicker div after clicking the button *@
+<div class="container">
+    <br />
+    <button id="selectMap" onclick="ShowHideDiv(); start();">Pick a map</button>
+</div>
+
+<script src="~/js/mapPicker.js"></script>

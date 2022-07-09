@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Agent Picker";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="list-group-horizontal">
+        <img src="~/agents/astra.jpg" alt="Astra" style="width:15%" />
+        <img src="~/agents/breach.webp" alt="Breach" style="width:15%" />
+        <img src="~/agents/brimstone.jpg" alt="Brimstone" style="width:15%" />
+        <img src="~/agents/cypher.jpg" alt="Cypher" style="width:15%" />
+        <img src="~/agents/jett.jpg" alt="Jett" style="width:15%">
+        <img src="~/agents/killjoy.jpg" alt="Killjoy" style="width:15%" />
+        <img src="~/agents/omen.jpg" alt="Omen" style="width:15%" />
+        <img src="~/agents/phoenix.webp" alt="Phoenix" style="width:15%" />
+        <img src="~/agents/raze.jpg" alt="Raze" style="width:15%" />
+        <img src="~/agents/reyna.jpg" alt="Reyna" style="width:15%" />
+        <img src="~/agents/sage.jpg" alt="Sage" style="width:15%" />
+        <img src="~/agents/skye.jpg" alt="Skye" style="width:15%" />
+        <img src="~/agents/sova.jpg" alt="Sova" style="width:15%" />
+        <img src="~/agents/viper.jpg" alt="Viper" style="width:15%" />
+        <img src="~/agents/yoru.jpg" alt="Yoru" style="width:15%" />
+    </div>
+</div>
+
+<div>
+    <br />
+
+    <p>You must select the agents you want and hit save before you will see the wheel.</p>
+
+    <br />
+
+    <input type="checkbox" name="agent" value="Astra" /> Astra
+    <input type="checkbox" name="agent" value="Breach" /> Breach
+    <input type="checkbox" name="agent" value="Brimstone" /> Brimstone
+    <input type="checkbox" name="agent" value="Cypher" /> Cypher
+    <input type="checkbox" name="agent" value="Jett" /> Jett
+    <input type="checkbox" name="agent" value="Killjoy" /> Killjoy
+    <input type="checkbox" name="agent" value="Omen" /> Omen
+    <input type="checkbox" name="agent" value="Phoenix" /> Phoenix
+    <input type="checkbox" name="agent" value="Raze" /> Raze
+    <input type="checkbox" name="agent" value="Reyna" /> Reyna
+    <input type="checkbox" name="agent" value="Sage" /> Sage
+    <input type="checkbox" name="agent" value="Skye" /> Skye
+    <input type="checkbox" name="agent" value="Sova" /> Sova
+    <input type="checkbox" name="agent" value="Viper" /> Viper
+    <input type="checkbox" name="agent" value="Yoru" /> Yoru
+    <button id="btn">Save</button>
+    <button id="chkall">Check / Uncheck All</button>
+</div>
+
+<div class="container">
+
+    <canvas id="canvas" height="500" width="500"></canvas>
+    <div class="text-left">
+        <input type="button" value="Spin" id="spin" />
+        <input type="button" value="Clear wheel" id="clearWheel" />
+    </div>
+</div>
+
+<script src="~/js/wheel.js"></script>
