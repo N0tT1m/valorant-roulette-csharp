@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31019.35
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValorantApp", "ValorantApp\ValorantApp.csproj", "{74CF9346-3F59-491A-BA27-FE2160C586CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4DA42D30-0B7B-4173-A9C6-E5939B68FE40} = {4DA42D30-0B7B-4173-A9C6-E5939B68FE40}
+		{62BAAB5D-4DCD-4079-BCCF-4B632331772C} = {62BAAB5D-4DCD-4079-BCCF-4B632331772C}
+		{A1507975-0E1F-4505-9E40-4EB472336534} = {A1507975-0E1F-4505-9E40-4EB472336534}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValorantApp.Models", "ValorantApp.Models\ValorantApp.Models.csproj", "{C2EE8CF2-FBAA-40C8-B955-40464D367A97}"
 EndProject
